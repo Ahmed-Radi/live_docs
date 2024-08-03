@@ -27,7 +27,7 @@ const CollaborativeRoom = ({
   },[roomMetadata?.title])
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const updateTitleHandler =  async (e: KeyboardEvent<HTMLInputElement>) => {
     if(e.key === 'Enter') {
